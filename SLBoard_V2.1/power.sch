@@ -1,0 +1,304 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lm2596
+LIBS:SparkFun-RF
+LIBS:SLBoard_V2.1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM2596S-5.0 U?
+U 1 1 5843F209
+P 4750 2600
+F 0 "U?" H 4750 2950 60  0000 C CNN
+F 1 "LM2596S-5.0" H 4750 2250 60  0000 C CNN
+F 2 "" H 4750 2600 60  0000 C CNN
+F 3 "" H 4750 2600 60  0000 C CNN
+	1    4750 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 5843F256
+P 6150 2400
+F 0 "L?" V 6100 2400 50  0000 C CNN
+F 1 "INDUCTOR" V 6250 2400 50  0000 C CNN
+F 2 "" H 6150 2400 50  0000 C CNN
+F 3 "" H 6150 2400 50  0000 C CNN
+	1    6150 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 5843F2BF
+P 6600 2650
+F 0 "C?" H 6625 2750 50  0000 L CNN
+F 1 "220uF/10V" H 6625 2550 50  0000 L CNN
+F 2 "" H 6638 2500 50  0000 C CNN
+F 3 "" H 6600 2650 50  0000 C CNN
+	1    6600 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5843F4C8
+P 3250 2800
+F 0 "D?" H 3250 2900 50  0000 C CNN
+F 1 "D_Schottky" H 3250 2700 50  0000 C CNN
+F 2 "" H 3250 2800 50  0000 C CNN
+F 3 "" H 3250 2800 50  0000 C CNN
+	1    3250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5843F601
+P 5700 2650
+F 0 "D?" H 5700 2750 50  0000 C CNN
+F 1 "D_Schottky" H 5700 2550 50  0000 C CNN
+F 2 "" H 5700 2650 50  0000 C CNN
+F 3 "" H 5700 2650 50  0000 C CNN
+	1    5700 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 5843F715
+P 3700 2600
+F 0 "C?" H 3725 2700 50  0000 L CNN
+F 1 "680uF/35V" H 3725 2500 50  0000 L CNN
+F 2 "" H 3738 2450 50  0000 C CNN
+F 3 "" H 3700 2600 50  0000 C CNN
+	1    3700 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 2800 4150 2800
+Wire Wire Line
+	3700 2650 3700 2800
+Connection ~ 3700 2800
+Wire Wire Line
+	5350 2400 5850 2400
+$Comp
+L C C?
+U 1 1 5843F80F
+P 6900 2650
+F 0 "C?" H 6925 2750 50  0000 L CNN
+F 1 "100nF" H 6925 2550 50  0000 L CNN
+F 2 "" H 6938 2500 50  0000 C CNN
+F 3 "" H 6900 2650 50  0000 C CNN
+	1    6900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5843F899
+P 6600 3100
+F 0 "#PWR?" H 6600 2850 50  0001 C CNN
+F 1 "GNDA" H 6600 2950 50  0000 C CNN
+F 2 "" H 6600 3100 50  0000 C CNN
+F 3 "" H 6600 3100 50  0000 C CNN
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2400 2850 2400
+Wire Wire Line
+	3700 2450 3700 2400
+Connection ~ 3700 2400
+Wire Wire Line
+	4150 2600 4000 2600
+Wire Wire Line
+	4000 2600 4000 2400
+Connection ~ 4000 2400
+Wire Wire Line
+	6900 2250 6900 2500
+Wire Wire Line
+	6600 2200 6600 2500
+Connection ~ 6600 2400
+Wire Wire Line
+	5700 2500 5700 2400
+Connection ~ 5700 2400
+Wire Wire Line
+	5700 2800 5700 2950
+Wire Wire Line
+	5700 2950 6900 2950
+Wire Wire Line
+	6900 2950 6900 2800
+Wire Wire Line
+	6600 2800 6600 3100
+Connection ~ 6600 2950
+Wire Wire Line
+	5350 2800 5450 2800
+Wire Wire Line
+	5450 2800 5450 2200
+Wire Wire Line
+	5450 2200 6600 2200
+$Comp
+L +5V #PWR?
+U 1 1 58442251
+P 6900 2250
+F 0 "#PWR?" H 6900 2100 50  0001 C CNN
+F 1 "+5V" H 6900 2390 50  0000 C CNN
+F 2 "" H 6900 2250 50  0000 C CNN
+F 3 "" H 6900 2250 50  0000 C CNN
+	1    6900 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 2400
+$Comp
+L AP1117 U?
+U 1 1 584423E0
+P 4700 4200
+F 0 "U?" H 4800 3950 50  0000 C CNN
+F 1 "AP1117" H 4700 4450 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 4700 3850 50  0001 C CNN
+F 3 "" H 4800 3950 50  0000 C CNN
+	1    4700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2400 7100 2400
+$Comp
+L CP C?
+U 1 1 584427A2
+P 4100 4500
+F 0 "C?" H 4125 4600 50  0000 L CNN
+F 1 "10uF" H 4125 4400 50  0000 L CNN
+F 2 "" H 4138 4350 50  0000 C CNN
+F 3 "" H 4100 4500 50  0000 C CNN
+	1    4100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 58442837
+P 5300 4500
+F 0 "C?" H 5325 4600 50  0000 L CNN
+F 1 "22uF" H 5325 4400 50  0000 L CNN
+F 2 "" H 5338 4350 50  0000 C CNN
+F 3 "" H 5300 4500 50  0000 C CNN
+	1    5300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 584428A5
+P 4700 4900
+F 0 "#PWR?" H 4700 4650 50  0001 C CNN
+F 1 "GNDA" H 4700 4750 50  0000 C CNN
+F 2 "" H 4700 4900 50  0000 C CNN
+F 3 "" H 4700 4900 50  0000 C CNN
+	1    4700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4100 4100 4350
+Wire Wire Line
+	4100 4200 4400 4200
+Wire Wire Line
+	5000 4200 5850 4200
+Wire Wire Line
+	5300 4200 5300 4350
+Wire Wire Line
+	4100 4650 4100 4800
+Wire Wire Line
+	4100 4800 5650 4800
+Wire Wire Line
+	5300 4800 5300 4650
+Wire Wire Line
+	4700 4500 4700 4900
+Connection ~ 4700 4800
+$Comp
+L C C?
+U 1 1 58442EAB
+P 5650 4500
+F 0 "C?" H 5675 4600 50  0000 L CNN
+F 1 "100nF" H 5675 4400 50  0000 L CNN
+F 2 "" H 5688 4350 50  0000 C CNN
+F 3 "" H 5650 4500 50  0000 C CNN
+	1    5650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4100 5650 4350
+Connection ~ 5300 4200
+Wire Wire Line
+	5650 4800 5650 4650
+Connection ~ 5300 4800
+$Comp
+L +5V #PWR?
+U 1 1 584432A7
+P 4100 4100
+F 0 "#PWR?" H 4100 3950 50  0001 C CNN
+F 1 "+5V" H 4100 4240 50  0000 C CNN
+F 2 "" H 4100 4100 50  0000 C CNN
+F 3 "" H 4100 4100 50  0000 C CNN
+	1    4100 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 4200
+$Comp
+L +3.3V #PWR?
+U 1 1 584436D2
+P 5650 4100
+F 0 "#PWR?" H 5650 3950 50  0001 C CNN
+F 1 "+3.3V" H 5650 4240 50  0000 C CNN
+F 2 "" H 5650 4100 50  0000 C CNN
+F 3 "" H 5650 4100 50  0000 C CNN
+	1    5650 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 4200
+Text Notes 7050 2900 0    60   ~ 0
+Iomax : 3A
+Wire Wire Line
+	2850 2800 3100 2800
+Text HLabel 2850 2400 0    60   BiDi ~ 0
+GND
+Text HLabel 2850 2800 0    60   Input ~ 0
++12V
+Text HLabel 5850 4200 2    60   Output ~ 0
++3.3V
+Text HLabel 7100 2400 2    60   Output ~ 0
++5V
+$EndSCHEMATC
